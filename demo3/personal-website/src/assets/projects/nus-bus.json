@@ -1,7 +1,0 @@
-{
-  "title": "NUS Bus",
-  "tags": ["Android"],
-  "description": "Visualise school bus locations on map. Save students' bus waiting time",
-  "image": "src/assets/images/projects/nus-bus.jpg",
-  "href": "https://github.com/weimingwill/NUSBus"
-}
