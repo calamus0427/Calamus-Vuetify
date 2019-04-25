@@ -2,19 +2,21 @@
    <div
     class="calamus_layout"
     >
-      <toolbar class="layout__toobar" v-on:iconClicked="showSidebar"></toolbar>
-      <okr-content class="layout_content" :isSmallScreen="isSmallScreen"></okr-content>
+      <cl-toolbar class="layout__toobar" v-on:iconClicked="showSidebar"></cl-toolbar>
+      <cl-content class="layout__content" :isSmallScreen="isSmallScreen"></cl-content>
+      <cl-footer class="layout__footer"></cl-footer>
   </div>
 </template>
 
 <script>
-import Toolbar from './components/Toolbar.vue'
-import OkrContent from './components/content.vue'
+import ClToolbar from './components/Toolbar.vue'
+import ClContent from './components/content.vue'
+import ClFooter from './components/footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Toolbar,OkrContent
+    ClToolbar,ClContent,ClFooter
   },
   data() {
       return {
@@ -61,8 +63,11 @@ export default {
 <style lang="scss" >
 .calamus_layout{
   
-  .layout_content{
+  .layout__content{
     width:100%;
+  }
+  .layout__footer{
+
   }
 }
 </style>
