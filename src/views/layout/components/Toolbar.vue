@@ -60,11 +60,9 @@
         this.container.onmousemove = this.onMouseMoveHandler;
         this.setOrigin(this.container);
         this.toolbar = this.$route.meta.toolbar
-        console.log("this.toolbar",this.$route,this.toolbar,)
     },
     watch:{
       $route(to,from){
-        console.log(to,"from",from);
         this.toolbar = to.meta.toolbar
       }
     },
