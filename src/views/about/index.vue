@@ -3,3 +3,8 @@
         Calamus
     </v-container>
 </template>
+<script>
+export default {
+    
+}
+</script>
